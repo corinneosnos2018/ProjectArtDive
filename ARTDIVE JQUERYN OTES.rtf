@@ -1,0 +1,76 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red185\green188\blue186;\red0\green0\blue0;\red162\green127\blue173;
+\red255\green255\blue255;\red27\green33\blue37;\red0\green0\blue0;\red255\green255\blue255;\red38\green38\blue38;
+}
+{\*\expandedcolortbl;;\cssrgb\c77255\c78431\c77647;\cssrgb\c0\c0\c0\c4706;\cssrgb\c69804\c58039\c73333;
+\csgenericrgb\c100000\c100000\c100000;\cssrgb\c13725\c17255\c19216;\csgenericrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c20000\c20000\c20000;
+}
+\margl1440\margr1440\vieww10800\viewh11620\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ARTDIVE JQUERY NOTES \
+\
+console log is a way to check your work \
+right click inspect\
+go to console \
+can send stuff to console to see if working \
+\
+DOM= document object model \
+how computer reads webpages\
+everything is nested by tags (e.g. head inside html) \
+\
+when u give something a VAR you can start manipulating it like you would a p tag or text \
+\
+script source is in body not head so that it loads quicker \
+\
+MAKE AN INTERACTIVE BUTTON \
+\
+$(document).ready(function() \{\
+    $('div').mouseenter(function() \{\
+        $('div').fadeTo('fast', 1);\
+    \});\
+    \
+    $('div').mouseleave(function() \{\
+        $('div').fadeTo('fast', 0.5);\
+        \
+    \});\
+\});\
+\
+How to write a function \'97 tells code to do something \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf2 \cb3 \expnd0\expndtw0\kerning0
+$(document).ready(\cf4 function\cf2 () \{\
+    Do something\
+\});
+\f2\fs30 \cf5 \cb6 \
+\
+\pard\pardeftab720\sl340\sa360\partightenfactor0
+
+\f0 \cf7 \cb8 A function is made up of three parts: the\'a0
+\f1\fs25\fsmilli12750 \cb3 function
+\f0\fs30 \cb8 \'a0keyword, any inputs that function takes (they go between the\'a0
+\f1\fs25\fsmilli12750 \cb3 ()
+\f0\fs30 \cb8 s and are separated by commas if there\cf9  are more than one), and whatever actions the function should perform (these go between the\'a0
+\f1\fs25\fsmilli12750 \cb3 \{\}
+\f0\fs30 \cb8 s). The general form is:\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf4 \cb3 function\cf2 (input1, input2, etc) \{\
+    Do a thing\
+    Do another thing\
+    Do yet another thing!\
+\}\
+\
+how to make a document fade its color \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f2\fs30 \cf2 \cb6 \
+\
+$(document).ready(function() \{\
+    $('div').click(function() \{\
+        $('div').fadeOut('slow');\
+    \});\
+\});}
