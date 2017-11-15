@@ -71,9 +71,14 @@ form {
 }
 
 /* Darker chat container */
-.darker {
+.bot {
     border-color: #ccc;
     background-color: #ddd;
+}
+
+.critic {
+    border-color: skyblue;
+    background-color: white;
 }
 
 /* Clear floats */
