@@ -1,4 +1,4 @@
-// get scripting
+// scripting
 
 $(document).ready(function(){
     $('.bot,.critic,.user').show();
