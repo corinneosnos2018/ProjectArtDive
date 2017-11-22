@@ -70,10 +70,20 @@ form {
     margin: 10px 0;
 }
 
+.user {
+    
+}
+
 /* Darker chat container */
-.darker {
+.bot {
     border-color: #ccc;
     background-color: #ddd;
+}
+
+.critic {
+    border-color: skyblue;
+    background-color: white;
+    
 }
 
 /* Clear floats */
@@ -86,16 +96,25 @@ form {
 /* Style images */
 .container img {
     float: left;
-    max-width: 60px;
+    max-width: 200px;
     width: 100%;
     margin-right: 20px;
-    border-radius: 50%;
+    padding: 5px;
+    display:block;
+    margin:auto;
+}
+
+.container img.left{
+    float: left;
+    max-width: 60px;
+    
 }
 
 /* Style the right image */
 .container img.right {
     float: right;
     margin-left: 20px;
+    max-width: 60px;
     margin-right:0;
 }
 
