@@ -56,7 +56,9 @@ body{background-color:#f1f1f1;}
 
 #FilmDive {
   padding-bottom: 10px;
-    overflow: visible;
+    width: 300px;
+    height: 100%;
+    padding-left: 50px;
 }
 
 .form-group{
@@ -93,7 +95,6 @@ body{background-color:#f1f1f1;}
 }
 
 img.left{
-    float: left;
     max-width: 60px;
     
 }
@@ -154,9 +155,9 @@ img.right {
     border-radius: 50%;
 }
 
-.msg img {
+/*.msg img {
     margin:10px;
-}
+}*/
 
 .avatar {
     position:absolute;
@@ -168,7 +169,7 @@ img.right {
 }
 
 .purple{
-    margin:0 px 0 px;
+    margin-bottom:10px
     height:100%;
 }
 

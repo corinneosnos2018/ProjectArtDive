@@ -96,17 +96,21 @@ $(document).ready(function(){
                     msg(11); // eleventh
                 },ms*3);
         
-    function fifthBlock(){
-        console.log('fifth block ...'); 
-        
-        showEllipsis();
-        
         setTimeout(
                 function(){
                     msg(12); // twelfth
                     $("#ellipsis").hide();
             },ms*4);
     }
+    
+     function fifthBlock(){
+        console.log('fifth block ...');
+        
+        showEllipsis();
+           
+        setTimeout(
+                function(){msg(13); // ninth message
+            },ms);
      }
     
     // function to load next message
@@ -147,17 +151,25 @@ $(document).ready(function(){
     // this function posts a new comment to the page and triggers the correct block to load
     function submitComment(){
         i++; // increment "i" by +1
+        
+        // append a new container with thumbnail, etc.
         $("<div>",{class:"msg user",id:"u"+i}).appendTo("#messages");
+        $("<div>",{class:"purple"}).appendTo("#u"+i);
+        $("<img>",{class:"left", src:"images/cleo.jpg"}).appendTo("#u"+i+ " .purple");
+        
+        // get the text typed into the input box
         var txt = $("#textbox").val();
         
-        $("#u"+i).text(txt);
+        // append the typed text into the new post
+        $( "#u"+i+ " .purple" ).append( txt );
+        
         $("#textbox").val("");
         $("#messages").animate({ scrollTop: scrollBottom }, "fast");
         
         checkNext();
     }
 
-    // check what block to send next
+    // check what block to send out next
     function checkNext(){
         
         //how many User messages are visible? 
@@ -170,6 +182,8 @@ $(document).ready(function(){
             thirdBlock();
         } else if (msgcount == 3){ // if three
             fourthBlock();
+        } else if (msgcount == 4){
+            fifthBlock();
         }
     }
 });
