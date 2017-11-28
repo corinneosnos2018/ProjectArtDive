@@ -96,21 +96,17 @@ $(document).ready(function(){
                     msg(11); // eleventh
                 },ms*3);
         
+    function fifthBlock(){
+        console.log('fifth block ...'); 
+        
+        showEllipsis();
+        
         setTimeout(
                 function(){
                     msg(12); // twelfth
                     $("#ellipsis").hide();
             },ms*4);
     }
-    
-     function fifthBlock(){
-        console.log('fifth block ...');
-        
-        showEllipsis();
-           
-        setTimeout(
-                function(){msg(13); // ninth message
-            },ms);
      }
     
     // function to load next message
