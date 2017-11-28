@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ArtDive Chat</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/chat.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+   
+  </head>
+    
+  <body>
+      <div id="FilmDive">
+    <div class="container-fluid">
+   <h1>FilmDive</h1>
+ </div>
+   </div>
+    <div class="container-fluid" id="messages">
+
+        <div class="msg bot" id="1"><img src="images/3-1.svg" alt="ArtDive" class="left">
+            Welcome to ArtDive! Have you seen any of these movies?</div> 
+        
+        <div class="msg bot" id="2">
+                <img src="images/3-1.svg" alt="ArtDive" class="left">
+                <div id="blade" class="tiles">       
+                    <img src="images/BR2049.jpg">
+                    <p>Blade Runner 2049</p>
+                </div>
+                <div class="tiles"><img src="images/It.jpg" alt="It" id="It"><p>It</p></div>
+                <div class="tiles"><img src=images/JoanDidion.jpg alt="Joan Didion: The Center Will Not Hold"><p>Joan Didion: The Center Will Not Hold</p></div>
+        </div>
+        
+        <div class="msg bot" id="3">
+            <img src="images/3-1.svg" alt="ArtDive" class="left">
+            
+            <img src=images/ryangosling.jpg alt="Ryan Gosling"><br>
+        </div>
+      
+        <div class="msg bot" id="4">
+            <div class="purple">
+            <img src="images/3-1.svg" alt="ArtDive" class="left"></div>
+            
+            <div class="Contents" id="cells">"Cells interlinked within cells, interlinked<br>
+            Within one stem, and dreadfully distinct.<br>
+            Against the dark, a tall white fountain played..." </div>
+        </div>
+        
+        <div class="msg bot" id="5"><img src="images/3-1.svg" alt="ArtDive" class="left">Did you see the first one?</div>
+        
+        <div class="msg bot" id="6"><img src="images/3-1.svg" alt="ArtDive" class="left">This sequel was written by the same screenwriter as the first movie, and builds on a lot of the same themes about the limits of artificial intelligence and the morality of abandoning the societies we created.
+        </div>
+    
+        <div class="msg bot" id="7">
+            <img src="images/3-1.svg" alt="ArtDive" class="left">Instead of totally reimagining the movie universe according to advancements in technology, the producers decided to keep the 1980s-future aesthetic... right down to the same corporate advertisements, some for companies that have since gone bankrupt.
+        </div>
+        
+        
+        <div class="msg bot" id="8">
+            <img src="images/3-1.svg" alt="ArtDive" class="left">What questions do you have about the movie?
+        </div>
+        
+        <div class="msg bot" id="9">
+            <img src="images/3-1.svg" alt="ArtDive" class="left">Hang on, let me connect you with a critic!
+        </div> 
+        <div class="msg critic" id="10">
+            <img src="images/critic.jpg" alt="Critic" class="left">Hi, this is Andrew Lapin -- I'm a film critic with NPR. Excited to talk with you about "Blade Runner 2049"!
+        </div>
+        
+        <div class="msg critic" id="11">
+            <img src="images/critic.jpg" alt="Critic" class="left">The diagnostics test is quoting Vladimir Nabokov's 1962 novel "Pale Fire," a book with a lot of thematic similarities to "2049." Both stories feature unreliable narrators, and both feature characters questioning their purpose on Earth.<br>
+            <a href="https://medium.com/@mariabustillos/blade-runner-2049-is-revealed-through-the-novel-pale-fire-dd9f04768439">Here's a great piece elaborating on these themes.</a>
+        </div>
+        <div class="msg critic" id="12">
+            <img src="images/critic.jpg" alt="Critic" class="left">Anything else I can help you with today?
+        </div>
+        <div class="msg critic" id="13">
+            <img src="images/critic.jpg" alt="Critic" class="left">Great! Thanks for using ArtDive!
+        </div>
+        <div id="ellipsis"><img src="img/ellipsis.gif" width="25" height="25" /></div>  
+            
+        
+    </div>
+      
+    <div class="container-fluid" id="chatbox">
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Add Comment" rows="5" id="textbox"></textarea>
+        </div> 
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+  </body>
+</html>

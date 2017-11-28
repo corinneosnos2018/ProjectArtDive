@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="691px" height="263px" viewBox="0 0 691 263" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="131.5" cy="131.5" r="131.5"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#D5B7F1" offset="0%"></stop>
+            <stop stop-color="#AB80DE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F7EFFF" offset="0%"></stop>
+            <stop stop-color="#C192F9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Concept-3---Modern-flat" transform="translate(-65.000000, -68.000000)">
+            <g id="Group" transform="translate(65.000000, 68.000000)">
+                <path d="M338.98,229 L338.98,143.6 L370.822,143.6 C397.662,143.6 416.206,162.022 416.206,186.056 L416.206,186.3 C416.206,210.334 397.662,229 370.822,229 L338.98,229 Z M353.986,215.336 L370.822,215.336 C388.756,215.336 400.468,203.258 400.468,186.544 L400.468,186.3 C400.468,169.586 388.756,157.264 370.822,157.264 L353.986,157.264 L353.986,215.336 Z M435.238,229 L450.244,229 L450.244,143.6 L435.238,143.6 L435.238,229 Z M501.24,229.61 L514.416,229.61 L549.918,143.6 L533.692,143.6 L508.072,209.236 L482.33,143.6 L465.738,143.6 L501.24,229.61 Z M564.558,229 L628.486,229 L628.486,215.58 L579.564,215.58 L579.564,192.644 L622.386,192.644 L622.386,179.224 L579.564,179.224 L579.564,157.02 L627.876,157.02 L627.876,143.6 L564.558,143.6 L564.558,229 Z" id="DIVE" fill="#1D2C4C"></path>
+                <path d="M435.66,115 L473.236,28.99 L487.144,28.99 L524.72,115 L508.86,115 L500.198,94.382 L459.816,94.382 L451.032,115 L435.66,115 Z M465.306,81.084 L494.708,81.084 L479.946,46.924 L465.306,81.084 Z M539.36,115 L539.36,29.6 L577.424,29.6 C588.16,29.6 596.578,32.772 602.068,38.14 C606.582,42.776 609.144,49.12 609.144,56.562 L609.144,56.806 C609.144,70.836 600.726,79.254 588.77,82.67 L611.828,115 L594.138,115 L573.154,85.232 L554.366,85.232 L554.366,115 L539.36,115 Z M554.366,71.934 L576.326,71.934 C587.062,71.934 593.894,66.322 593.894,57.66 L593.894,57.416 C593.894,48.266 587.306,43.264 576.204,43.264 L554.366,43.264 L554.366,71.934 Z M648.184,115 L663.312,115 L663.312,43.508 L690.396,43.508 L690.396,29.6 L621.1,29.6 L621.1,43.508 L648.184,43.508 L648.184,115 Z" id="ART" fill="#1D2C4C"></path>
+                <path d="M341.5,72.5 L410.507246,72.5" id="Line" stroke="#AB80DE" stroke-width="11" stroke-linecap="square"></path>
+                <g id="Rectangle-2">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#AB80DE" xlink:href="#path-1"></use>
+                    <rect fill="url(#linearGradient-3)" mask="url(#mask-2)" x="80" y="22" width="203" height="156" rx="52"></rect>
+                    <rect fill="url(#linearGradient-3)" mask="url(#mask-2)" x="141" y="132" width="150" height="115" rx="52"></rect>
+                    <path d="M122.555874,210 L140,210 C168.718807,210 192,186.718807 192,158 L192,106 C192,77.281193 168.718807,54 140,54 L140,54 L41,54 L41,54 C12.281193,54 -11,77.281193 -11,106 L-11,158 C-11,186.718807 12.281193,210 41,210 L41,210 L93.7496093,210 L122.555874,238.806265 L122.555874,210 Z" id="Combined-Shape" fill="url(#linearGradient-4)" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
