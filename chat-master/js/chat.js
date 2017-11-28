@@ -1,0 +1,179 @@
+$(document).ready(function(){
+    
+    var i = 0; // set count to 0
+    var ms = 3000; // milliseconds
+    
+    // set the chat window to bottom
+    var scrollBottom = $(window).scrollTop() + $(window).height();
+    
+    // when the page loads, hide all elements with class .msg
+    $(".msg").hide();
+    
+    // run the function of "firstBlock"
+    firstBlock();
+    
+    // this function loads the first two bot messages in the series
+    function firstBlock(){
+        console.log('first block ...');
+        
+        showEllipsis();
+           
+        setTimeout(
+                function(){msg(1); // first
+            },ms);
+        
+        setTimeout(
+                function(){
+                    msg(2); // second
+                    $("#ellipsis").hide();
+            },ms*2);
+        
+    }
+    
+    // this function loads the second set of bot messages in the series
+    function secondBlock(){
+        console.log('second block ...');
+        
+        showEllipsis();
+           
+        setTimeout(
+                function(){msg(3); // third bot message
+            },ms);
+        
+        setTimeout(
+                function(){
+                    msg(4); // fourth
+            },ms*2);
+        
+        setTimeout(
+                function(){
+                    msg(5); // fifth
+                    $("#ellipsis").hide();
+            },ms*3);
+        
+    }
+    
+    // this function loads the third set of bot messages in the series
+    function thirdBlock(){
+        console.log('third block ...');
+        
+        showEllipsis();
+           
+        setTimeout(
+                function(){msg(6); // sixth message
+            },ms);
+        
+        setTimeout(
+                function(){
+                    msg(7); // seventh
+            },ms*2);
+        
+        setTimeout(
+                function(){
+                    msg(8); // eighth
+                    $("#ellipsis").hide();
+            },ms*3);
+        
+    }
+    
+    // this function loads the third set of bot messages in the series
+    function fourthBlock(){
+        console.log('fourth block ...');
+        
+        showEllipsis();
+           
+        setTimeout(
+                function(){msg(9); // ninth message
+            },ms);
+        
+        setTimeout(
+                function(){
+                    msg(10); // tenth
+            },ms*2);
+        
+        setTimeout(
+                function(){
+                    msg(11); // eleventh
+                },ms*3);
+        
+        setTimeout(
+                function(){
+                    msg(12); // twelfth
+                    $("#ellipsis").hide();
+            },ms*4);
+    }
+    
+     function fifthBlock(){
+        console.log('fifth block ...');
+        
+        showEllipsis();
+           
+        setTimeout(
+                function(){msg(13); // ninth message
+            },ms);
+     }
+    
+    // function to load next message
+    function msg(num){
+        
+        $("#"+num).appendTo("#messages");
+        
+        showEllipsis();
+        
+        $("#"+num).show();
+        
+        $("#messages").animate({ scrollTop: scrollBottom }, "fast");
+
+    }
+    
+    // function to show ellipsis
+    
+    function showEllipsis(){
+        $("#ellipsis").show().appendTo('#messages');
+        
+    }
+    
+    // when user hits "Enter" run the submitComment function    
+    
+    $("#textbox").keypress(function (e) {
+        if (e.keyCode != 13) return;
+        var txt = $("#textbox").val().replace(/\n/g, "");
+        
+        if (e.keyCode == 13){
+            submitComment();
+        }
+        
+        return false;
+        
+    });
+    
+   
+    // this function posts a new comment to the page and triggers the correct block to load
+    function submitComment(){
+        i++; // increment "i" by +1
+        $("<div>",{class:"msg user",id:"u"+i}).appendTo("#messages");
+        var txt = $("#textbox").val();
+        
+        $("#u"+i).text(txt);
+        $("#textbox").val("");
+        $("#messages").animate({ scrollTop: scrollBottom }, "fast");
+        
+        checkNext();
+    }
+
+    // check what block to send next
+    function checkNext(){
+        
+        //how many User messages are visible? 
+        var msgcount = $(".user:visible").length;
+        console.log(msgcount);
+
+        if(msgcount == 1){ // if one
+            secondBlock();
+        } else if(msgcount == 2){ // if two
+            thirdBlock();
+        } else if (msgcount == 3){ // if three
+            fourthBlock();
+        }
+    }
+});
