@@ -4,7 +4,6 @@ body{background-color:#f1f1f1;}
 
 .msg {
     padding:25px;
-    background-color:#efefef;
     margin:10px;
     border:1px solid #ccc;
     position:relative;
@@ -25,6 +24,7 @@ body{background-color:#f1f1f1;}
     overflow-x:auto;
     float:left;
      font-family: 'Rubik', sans-serif;
+    
   
 }
 
@@ -33,7 +33,7 @@ body{background-color:#f1f1f1;}
     top:0;
     left:80px;
     padding:10px;
-    background-color:#cc000;
+    background-color:#ccc000;
     min-height:80px;
 }
 
@@ -56,9 +56,12 @@ body{background-color:#f1f1f1;}
 
 #FilmDive {
   padding-bottom: 10px;
-    width: 300px;
+    width: 370px;
     height: 100%;
-    padding-left: 50px;
+    padding-left: 80px;
+    padding-right:100px;
+    border-color: #ffd480;
+    margin:5px;
 }
 
 .form-group{
@@ -76,7 +79,7 @@ body{background-color:#f1f1f1;}
 
 .bot {
     border-color: #ccc;
-    background-color: #ddd;
+    background-color: #e0e0eb;
 }
 
 .critic {
@@ -87,7 +90,7 @@ body{background-color:#f1f1f1;}
 
 .container-fluid {
   border: 10px solid #dedede;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
@@ -141,8 +144,7 @@ img.left{
 
 /* Style the right image */
 img.right {
-    float: right;
-    margin-left: 20px;
+    float:right;
     max-width: 60px;
     margin-right:0;
 }
@@ -169,7 +171,7 @@ img.right {
 }
 
 .purple{
-    margin-bottom:10px
+    margin-bottom:25px;
     height:100%;
 }
 
