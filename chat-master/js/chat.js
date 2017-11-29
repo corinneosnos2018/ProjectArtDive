@@ -7,7 +7,7 @@ $(document).ready(function(){
     var scrollBottom = $(window).scrollTop() + $(window).height();
     
     // when the page loads, hide all elements with class .msg
-    //$(".msg").hide();
+    $(".msg").hide();
     
     // run the function of "firstBlock"
     firstBlock();

@@ -157,6 +157,23 @@ img.right {
     border-radius: 50%;
 }
 
+.joan {
+    font-size:0.8em;
+}
+
+.col-xs-4 img {
+    min-height:44px;
+}
+
+.col-xs-4 {
+    padding-right:0px;
+    padding-left:0px;
+}
+
+#messages .thumbnail {
+    height:172px;
+}
+
 /*.msg img {
     margin:10px;
 }*/
