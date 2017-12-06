@@ -3,9 +3,6 @@ $(document).ready(function(){
     var i = 0; // set count to 0
     var ms = 3000; // milliseconds
     
-    // set the chat window to bottom
-    var scrollBottom = $(window).scrollTop() + $(window).height();
-    
     // when the page loads, hide all elements with class .msg
     $(".msg").hide();
     
@@ -123,7 +120,11 @@ $(document).ready(function(){
         
         $("#"+num).show();
         
-        $("#messages").animate({ scrollTop: scrollBottom }, "fast");
+        $('#messages').stop().animate({
+            scrollTop: $('#messages')[0].scrollHeight
+        }, "fast");
+        
+        console.log($('#messages')[0].scrollHeight);
 
     }
     
@@ -166,7 +167,11 @@ $(document).ready(function(){
         $( "#u"+i ).append( txt );
         
         $("#textbox").val("");
-        $("#messages").animate({ scrollTop: scrollBottom }, "fast");
+        $('#messages').stop().animate({
+            scrollTop: $('#messages')[0].scrollHeight
+        }, "fast");
+        
+        console.log($('#messages')[0].scrollHeight);
         
         checkNext();
     }
