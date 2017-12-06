@@ -3,9 +3,6 @@ $(document).ready(function(){
     var i = 0; // set count to 0
     var ms = 3000; // milliseconds
     
-    // set the chat window to bottom
-    var scrollBottom = $(window).scrollTop() + $(window).height();
-    
     // when the page loads, hide all elements with class .msg
     $(".msg").hide();
     
@@ -109,7 +106,8 @@ $(document).ready(function(){
         showEllipsis();
            
         setTimeout(
-                function(){msg(13); // ninth message
+                function(){msg(13); // thirteenth message
+                $("#ellipsis").hide();
             },ms);
      }
     
@@ -122,7 +120,11 @@ $(document).ready(function(){
         
         $("#"+num).show();
         
-        $("#messages").animate({ scrollTop: scrollBottom }, "fast");
+        $('#messages').stop().animate({
+            scrollTop: $('#messages')[0].scrollHeight
+        }, "fast");
+        
+        console.log($('#messages')[0].scrollHeight);
 
     }
     
@@ -155,16 +157,21 @@ $(document).ready(function(){
         // append a new container with thumbnail, etc.
         $("<div>",{class:"msg user",id:"u"+i}).appendTo("#messages");
         $("<div>",{class:"purple"}).appendTo("#u"+i);
-        $("<img>",{class:"left", src:"images/cleo.jpg"}).appendTo("#u"+i+ " .purple");
+        $("<img>",{class:"right", src:"images/cleo.jpg"}).appendTo("#u"+i+ " .purple");
+        $("<div>",{style:"clear:both"}).appendTo("#u"+i);
         
         // get the text typed into the input box
         var txt = $("#textbox").val();
         
         // append the typed text into the new post
-        $( "#u"+i+ " .purple" ).append( txt );
+        $( "#u"+i ).append( txt );
         
         $("#textbox").val("");
-        $("#messages").animate({ scrollTop: scrollBottom }, "fast");
+        $('#messages').stop().animate({
+            scrollTop: $('#messages')[0].scrollHeight
+        }, "fast");
+        
+        console.log($('#messages')[0].scrollHeight);
         
         checkNext();
     }
